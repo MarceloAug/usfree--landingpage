@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;600&display=swap');
+.tipography-green{
+    font-family: 'Muli';
+    font-weight: Bold;
+    color: #87b786;
+    font-size: 40px;
+    text-align: center;
+}
+
+.tipography-green-25px{
+    font-family: 'Muli';
+    font-weight: Bold;
+    color: #87b786;
+    font-size: 25px;
+    text-align: center;
+}
+
+.tipography-purple{
+    font-family: 'Muli';
+    font-weight: Bold;
+    color: #595468;
+    font-size: 40px;
+    line-height: 1.0;
+    text-align: center;
+}
+
+.tipography-purple-text{
+
+    font-family: 'Muli', sans-serif;
+    font-weight: normal;
+    color: #595468;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center
+
+}
+
+.tipography-purple-text-20px{
+
+    font-family: 'Muli', sans-serif;
+    font-weight: normal;
+    color: #595468;
+    font-size: 20px;
+    text-align: inherit;
+    justify-content: center
+
+}
+
+.tipography-white-text{
+
+    font-family: 'Muli', sans-serif;
+    font-weight: normal;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center
+}
+
+.tipography-black{
+
+    font-family: 'Muli', sans-serif;
+    font-weight: normal;
+    color: #3b3636;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center
+}
+
+.tipography-black-20px{
+
+    font-family: 'Muli', sans-serif;
+    font-weight: normal;
+    color: #3b3636;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center
+}
+
+.background-color-purple{
+
+    background-color: #595468;
+}
+
+.background-color-green{
+
+    background-color: #87b786;
+}
+
+
+.spacing-card {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  
+   
+}
+
+.shadow{
+    box-shadow: inset 15px 15px 15px rgba(0,0,0,0.75);
+   
+
+}
+
+.margin{
+    margin-top: 5%;
+}
+
+
+.btn-color{
+    background-color: #87b786;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.flex-father{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px 
+}
+
+.flex-son{
+    
+    margin-left: 30px;
+}
+
+.flex-father-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px 
+}
+
