@@ -1,33 +1,37 @@
 import React, { Component } from 'react';
-import { Container, Row, Col} from 'reactstrap'; 
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Row, Col} from 'reactstrap'; 
+import {Form, FormGroup, Label, Input } from 'reactstrap';
 import Text from './Text';
 
 export default class Formulario extends Component {
 
     render(){
         const registerHere = require('../Images/hand2_v1.svg');
-        const bord = require('../Images/wave.svg')
         return(
             <div>
                 <Row className="margin">
-                    <Col sm = "12"md = "6" >
+                    <Col sm = "12"md = "6" className="mb-width" >
                        <Row>
-                            <Col sm="12" md={{size:5,offset:4}}>
+                            <Col sm="12" md={{size:5,offset:3}}>
                                 <Text class = "tipography-green" text = "Cadastre-se para saber mais"></Text>
                                
                             </Col>
                                 
                             <Col  sm="12" md={{size:2,offset:6}}>
-                               <img src={registerHere} className="img-fluid" alt="indica usfree"/>
+                               <img src={registerHere} className="img-fluid indicates" alt="indica usfree"/>
                              
+                            </Col>
+
+                            <Col sm="12" md={{size:5,offset:3}}>
+                                <Text class = "tipography-purple-text" text = "Entraremos em contato com você"></Text>
+                               
                             </Col>
                           
                         </Row>
                     </Col>
 
-                    <Col sm = "12"md = "6">
-                        <Col sm="12" md={{ size: 6, offset: 2 }}  className="spacing-card shadow-lg p-3 mb-5 rounded">
+                    <Col sm = "12"md = "6" className="mb-width">
+                        <Col sm="12" md={{ size: 6, offset:3 }}  className="spacing-card shadow-lg p-3 mb-5 rounded">
                             <Col sm="12" md={{ size: 8, offset: 2 }}>
                                 <Form>
                                     <FormGroup>

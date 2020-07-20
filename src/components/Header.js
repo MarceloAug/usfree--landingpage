@@ -12,37 +12,37 @@ export default class Header extends Component {
         const linkedin = require('../Images/linkedin.svg');
         const facebook = require('../Images/facebook.svg');
         const istagram = require('../Images/instagram.svg');
-        const WhatsApp = require('../Images/whatsapp.svg');
-        const youtube = require('../Images/youtube.svg');
+      /*   const WhatsApp = require('../Images/whatsapp.svg');
+        const youtube = require('../Images/youtube.svg') */;
         return(
             <Container className="themed-container" fluid={true}>
                 <Row>
                     <Col sm={{ size:2, offset: 1 }} >
-                        <img src={handHeader} className="img-fluid" alt="indica usfree"/>
+                        <img src={handHeader} className="img-fluid indicates" alt="indica usfree"/>
                     </Col>
 
                     <Col sm="6"  >
                         <img src={logo} className="img-fluid" alt="Usfree"/>
-                        <Col sm="5" md={{  offset: 3 }}>
+                        <Col sm="5" md={{ size:6, offset: 3 }} >
                             <Text class="tipography-green" text = "Trabalhe com PJ da maneira certa"></Text>
                         </Col>						
                     </Col>
                     <Col sm="12" md={{ size: 2,offset: 1 }} className="flex-father-row" >
                         <Col className="flex-son">
-                            <a href="default.asp"><img src={linkedin} className="img-fluid" alt="Linkedin"></img></a>
+                            <a href="https://www.linkedin.com/company/usfree" ><img src={linkedin} className="img-fluid" alt="Linkedin"></img></a>
                         </Col>
                         <Col className="flex-son">
-                            <a href="default.asp"> <img src={facebook} className="img-fluid" alt="Facebook"></img></a>
+                            <a href="https://www.facebook.com/usfreebrasil/"> <img src={facebook} className="img-fluid" alt="Facebook"></img></a>
                         </Col>
                         <Col className="flex-son">
-                            <a href="default.asp"> <img src={istagram} className="img-fluid" alt="Instagram"></img></a>
+                            <a href="https://www.instagram.com/usfreebrasil/s"> <img src={istagram} className="img-fluid" alt="Instagram"></img></a>
                         </Col>
-                        <Col className="flex-son">
+                  {/*       <Col className="flex-son">
                             <a href="default.asp"> <img src={WhatsApp} className="img-fluid" alt="WhatsApp"></img></a>
                         </Col>
                         <Col className="flex-son">
                             <a href="default.asp">  <img src={youtube} className="img-fluid" alt="Youtube"></img></a>
-                        </Col>
+                        </Col> */}
                     </Col>
                 </Row>
 
