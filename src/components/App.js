@@ -1,11 +1,11 @@
 
 import React, { Component } from 'react';
 import Header from './Header';
-import About from './About';
-import Card from './Card';
 import Formulario from './Formulario';
 import Question from './Question';
 import Footer from './Footer';
+import Carrosel from './Carrosel';
+import About from './About';
 
 
 export default class App extends Component {
@@ -14,14 +14,14 @@ export default class App extends Component {
 	
     return (
 		<div>
-			<Header></Header>
+			<Header/>
 			<br></br><br></br><br></br>
-			<About></About>
+			<About/>
 			<br></br><br></br><br></br><br></br>
-			<Card></Card>
-			<Formulario></Formulario>
-			<Question></Question>
-			<Footer></Footer>
+			<Carrosel/>
+			<Formulario/>
+			<Question/>
+			<Footer/>
 		
 		</div>
     );
