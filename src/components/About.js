@@ -7,7 +7,8 @@ export default class About extends Component {
 
     render() {
         const badOk = require('../Images/bad_v1.svg');
-	    const goodOk = require('../Images/good_v1.svg');
+        const goodOk = require('../Images/good_v1.svg');
+       
         return(
             <Row>
 
@@ -16,7 +17,7 @@ export default class About extends Component {
                 </Col>
 
                 <Col  lg ="4" sm="12" md = "12">
-                    <Text class = "tipography-purple-text" text = "Experimente trabalhar como prestador de serviço! Veja como você pode e deveria trabalhar como prestador, com transparência com seu contratante e outros tomadores de serviço!"></Text>
+                    <Text class = "tipography-purple-text" text = " Realizamos o processo de contratação entre pessoas jurídicas.Buscamos incentivar, por meio da educação, a autonomia e liberdade de negociação na contratação entre tomador e prestador de serviços, tornando a pejotização correta, simples e vantajosa para ambas as partes."></Text>
                 </Col>	
 
                 <Col lg="4" sm="12" md="12">

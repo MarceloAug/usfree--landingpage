@@ -9,26 +9,23 @@ const items = [
   {
     src: flex,
     altText: 'Flexibilidade',
-    header: 'Flexibilidade',
-    caption:"Flexibilidade",
+    caption:"",
     key: '1'
   },
   {
     src:seg,
     altText: 'Segurança jurídica',
-    header: 'Segurança juridica',
-    caption: 'Flexibilidade',
+    caption: '',
     key: '2'
   },
   {
     src: usfree,
-    altText: 'O que fazemos?',
-    header: 'O que fazemos?',
-    caption: 'O que fazemos?',
+    altText: 'Experimente trabalhar como prestador de serviços!',
+    caption: '',
     key: '3'
   }
 ];
 
-const Carrosel = () => <UncontrolledCarousel items={items} />;
+const Carrosel = () => <UncontrolledCarousel interval={20000}  items={items} />;
 
 export default Carrosel;

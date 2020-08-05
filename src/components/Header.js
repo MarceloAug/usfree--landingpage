@@ -9,9 +9,9 @@ export default class Header extends Component {
     render(){
         const logo = require('../Images/logousfree.png');
         const handHeader = require('../Images/hand1_v1.svg');
-        const linkedin = require('../Images/linkedin.svg');
-        const facebook = require('../Images/facebook.svg');
-        const istagram = require('../Images/instagram.svg');
+        const linkedin = require('../Images/linkedin-gray.svg');
+        const facebook = require('../Images/facebook-gray.svg');
+        const istagram = require('../Images/instagram-gray.svg');
       /*   const WhatsApp = require('../Images/whatsapp.svg');
         const youtube = require('../Images/youtube.svg') */;
         return(
@@ -35,7 +35,7 @@ export default class Header extends Component {
                             <a href="https://www.facebook.com/usfreebrasil/"> <img src={facebook} className="img-fluid" alt="Facebook"></img></a>
                         </Col>
                         <Col className="flex-son">
-                            <a href="https://www.instagram.com/usfreebrasil/s"> <img src={istagram} className="img-fluid" alt="Instagram"></img></a>
+                            <a href="https://www.instagram.com/usfreebrasil/"> <img src={istagram} className="img-fluid" alt="Instagram"></img></a>
                         </Col>
                   {/*       <Col className="flex-son">
                             <a href="default.asp"> <img src={WhatsApp} className="img-fluid" alt="WhatsApp"></img></a>

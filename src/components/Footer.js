@@ -24,7 +24,7 @@ export default class Question extends Component {
                         <Text class = "tipography-black" text = "CONTATOS"></Text>
                         <Row>
                             <Col sm="12" md="6" >
-                                <Text class = "tipography-black-20px" text = "querose@usfree.com.br"></Text>
+                                <Text class = "tipography-black-20px" text = "queroser@usfree.com.br"></Text>
                             </Col>
                             <Col sm="12" md="6" >
                                 <Text class = "tipography-black-20px" text = "(51)99999-5562"></Text>
