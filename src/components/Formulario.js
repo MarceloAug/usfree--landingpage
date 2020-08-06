@@ -14,7 +14,7 @@ export default class Formulario extends Component {
         this.state = {
             customers:{
                 nome:"",
-                date:"",
+                date:"0000-00-00",
                 cidade:"",
                 estado:"",
                 profissao:"",
@@ -53,7 +53,7 @@ export default class Formulario extends Component {
                 this.setState({
                     customers:{
                         nome:"",
-                        date:"",
+                        date:"0000-00-00",
                         cidade:"",
                         estado:"",
                         profissao:"",
@@ -88,7 +88,7 @@ export default class Formulario extends Component {
                             </Col>
 
                             <Col sm="12" md={{size:6,offset:3}}>
-                                <Text class = "tipography-purple-text" text = "Cadastre-se para receber maiores informações e nos ajudar a transformar o mercado"></Text>
+                                <Text class = "tipography-purple-text" text = "Cadastre-se para receber maiores informações e nos ajude a transformar o mercado"></Text>
                             </Col>
                           
                         </Row>
@@ -103,8 +103,8 @@ export default class Formulario extends Component {
                                         <Input type="text" name="nome" id="nome" placeholder="Digite seu nome" value={this.state.customers.nome}  onChange={this.handleImputChange} required />
                                     </FormGroup>
                                     <FormGroup>
-                                        <Label className="tipography-purple-text-20px" for="idade">Data de Nascimento</Label>
-                                        <Input type="date" name="date" id="date" placeholder="Digite sua data de nascimento" value={this.state.customers.date} onChange={this.handleImputChange} required />
+                                        <Label className="tipography-purple-text-20px" for="idade">Data de Nascimento(opcional)</Label>
+                                        <Input type="date" name="date" id="date" placeholder="Digite sua data de nascimento" value={this.state.customers.date} onChange={this.handleImputChange}  />
                                     </FormGroup>
                                     
                                     <FormGroup>
