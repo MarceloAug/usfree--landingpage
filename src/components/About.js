@@ -13,7 +13,7 @@ export default class About extends Component {
             <Row>
 
                 <Col lg="4" sm="12" md="12">
-                        <img src={badOk} className="img-fluid" />
+                        <img src={badOk} className="img-fluid" alt = "não ok" />
                 </Col>
 
                 <Col  lg ="4" sm="12" md = "12">
@@ -21,7 +21,7 @@ export default class About extends Component {
                 </Col>	
 
                 <Col lg="4" sm="12" md="12">
-                        <img src={goodOk} className="img-fluid" />
+                        <img src={goodOk} className="img-fluid" alt="ok"/>
                 </Col>	
 					
             </Row>
