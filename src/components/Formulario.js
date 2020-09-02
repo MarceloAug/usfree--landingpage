@@ -14,7 +14,7 @@ export default class Formulario extends Component {
         this.state = {
             customers:{
                 nome:"",
-                date:"0000-00-00",
+                date:"",
                 cidade:"",
                 estado:"",
                 profissao:"",
@@ -36,8 +36,9 @@ export default class Formulario extends Component {
 
     ///dispara para api 
     handleSubmit = event =>{
+
         console.log(JSON.stringify(this.state.customers));
-        fetch("http://localhost:3000/customers",{
+        fetch("https://usfree.com.br:80/customers/",{
             method:"POST",
             headers: {
                 'Accept': 'application/json',
@@ -47,13 +48,14 @@ export default class Formulario extends Component {
             body:JSON.stringify(this.state.customers)
          
         }).then(data =>{
+        
             if(data.ok){
             
                 toast.success("Obrigado por se cadastrar , entraremos em contato com você em breve ");
                 this.setState({
                     customers:{
                         nome:"",
-                        date:"0000-00-00",
+                        date:"",
                         cidade:"",
                         estado:"",
                         profissao:"",
@@ -94,8 +96,8 @@ export default class Formulario extends Component {
                         </Row>
                     </Col>
 
-                    <Col sm = "12"md = "6" className="mb-width">
-                        <Col sm="12" md={{ size: 6, offset:3 }}  className="spacing-card shadow-lg p-3 mb-5 rounded">
+                    <Col sm = "12" md = "6" className="mb-width">
+                        <Col sm="12" md={{ size: 7, offset:3 }}  className="spacing-card shadow-lg p-3 mb-5 rounded">
                             <Col sm="12" md={{ size: 8, offset: 2 }}>
                                 <Form  onSubmit={this.handleSubmit}>
                                     <FormGroup>
@@ -103,7 +105,7 @@ export default class Formulario extends Component {
                                         <Input type="text" name="nome" id="nome" placeholder="Digite seu nome" value={this.state.customers.nome}  onChange={this.handleImputChange} required />
                                     </FormGroup>
                                     <FormGroup>
-                                        <Label className="tipography-purple-text-20px" for="idade">Data de Nascimento(opcional)</Label>
+                                        <Label className="tipography-purple-text-20px" for="idade">Nascimento *</Label>
                                         <Input type="date" name="date" id="date" placeholder="Digite sua data de nascimento" value={this.state.customers.date} onChange={this.handleImputChange}  />
                                     </FormGroup>
                                     
@@ -155,16 +157,21 @@ export default class Formulario extends Component {
                                     </FormGroup>
 
                                     <FormGroup>
-                                        <Label className="tipography-purple-text-20px" for="tipo">Selecione o seu tipo de perfil</Label>
+                                        <Label className="tipography-purple-text-20px" for="tipo">Perfil </Label>
                                         <CustomInput  value={this.state.customers.tipo} onChange={this.handleImputChange} type="select" id="tipo" name="tipo" required>
                                             <option value="">Selecione</option>
                                             <option value="1">Prestador de serviço</option>
                                             <option value ="0">Tomador</option>
                                         </CustomInput>
                                     </FormGroup>
+                                    <Col>
+                                         <Label className="tipography-purple-text-20px" >* opcional</Label>
+                                    </Col>
+                                    
                                     <Col sm={{ size: 10, offset: 2 }}>
-                                        <button className="btn-color btn-block  btn-lg" type="submit">Cadastrar</button>
-                                     </Col>
+                                        <button className="btn-color" type="submit">Cadastrar</button>
+                                    </Col>
+                                
                                 </Form>
                             </Col>
                         </Col>

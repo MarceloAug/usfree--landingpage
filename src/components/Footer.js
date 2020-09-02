@@ -48,6 +48,7 @@ export default class Question extends Component {
                                 </Col> */}
                             </Col>
                         </Row>
+                        <Text class = "tipography-black-20px" text = "icones fornececidos por https://icons8.com"></Text>
                     </Col> 
                 </Row>
              

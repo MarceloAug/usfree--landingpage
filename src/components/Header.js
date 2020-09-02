@@ -18,12 +18,12 @@ export default class Header extends Component {
             <Container className="themed-container" fluid={true}>
                 <Row>
                     <Col sm={{ size:2, offset: 1 }} >
-                        <img src={handHeader} className="img-fluid indicates" alt="indica usfree"/>
+                        <img src={handHeader} className="img-fluid indicatesHeader" alt="indica usfree"/>
                     </Col>
 
                     <Col sm="6"  >
                         <img src={logo} className="img-fluid" alt="Usfree"/>
-                        <Col sm="5" md={{ size:6, offset: 3 }} >
+                        <Col sm="12" md={{ size:6, offset: 3 }} lg = {{ size:6, offset: 3 }} >
                             <Text class="tipography-green" text = "Trabalhe com PJ da maneira certa"></Text>
                         </Col>						
                     </Col>

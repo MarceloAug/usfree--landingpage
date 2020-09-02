@@ -17,7 +17,7 @@ export default class About extends Component {
                 </Col>
 
                 <Col  lg ="4" sm="12" md = "12">
-                    <Text class = "tipography-purple-text" text = " Realizamos o processo de contratação entre pessoas jurídicas.Buscamos incentivar, por meio da educação, a autonomia e liberdade de negociação na contratação entre tomador e prestador de serviços, tornando a pejotização correta, simples e vantajosa para ambas as partes."></Text>
+                    <Text class = "tipography-purple-text" text = " Realizamos o processo de contratação entre pessoas jurídicas. Buscamos incentivar, por meio da educação, a autonomia e liberdade de negociação na contratação entre tomador e prestador de serviços, tornando a pejotização correta, simples e vantajosa para ambas as partes."></Text>
                 </Col>	
 
                 <Col lg="4" sm="12" md="12">
