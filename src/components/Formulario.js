@@ -38,7 +38,7 @@ export default class Formulario extends Component {
     handleSubmit = event =>{
 
         console.log(JSON.stringify(this.state.customers));
-        fetch("https://usfree.com.br:80/customers/",{
+        fetch("http://162.144.239.112/customers",{
             method:"POST",
             headers: {
                 'Accept': 'application/json',
